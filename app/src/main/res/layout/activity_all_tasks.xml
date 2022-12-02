@@ -4,39 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".AllTasks">
 
     <TextView
-        android:id="@+id/MainActivityHeroTitle"
-        android:layout_width="174dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="104dp"
-        android:text="@string/HeroTitle"
+        android:id="@+id/textView"
+        android:layout_width="149dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="76dp"
+        android:text="TextView"
         android:textSize="34sp"
-        android:typeface="sans"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/AllTaskActivityHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="136dp"
+        android:text="@string/backHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/MainActivityAddButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginBottom="144dp"
+        android:layout_marginBottom="136dp"
         android:text="@string/add_tasks"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/MainActivityAllButton" />
-
-    <Button
-        android:id="@+id/MainActivityAllButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="144dp"
-        android:text="@string/all_tasks"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.318"
-        app:layout_constraintStart_toEndOf="@+id/MainActivityAddButton" />
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toEndOf="@+id/AllTaskActivityHome" />
 </androidx.constraintlayout.widget.ConstraintLayout>

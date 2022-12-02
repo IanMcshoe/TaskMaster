@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">TaskMaster</string>
-    <string name="greeting">Hello World!</string>
+    <string name="HeroTitle">My Tasks..</string>
+    <string name="add_tasks">Add</string>
+    <string name="all_tasks">Tasks</string>
+    <string name="heroAddTasks">Add New Task</string>
+    <string name="newTask">Add</string>
+    <string name="backHome">Home</string>
+
 </resources>
