@@ -17,17 +17,13 @@ public class AllTasks extends AppCompatActivity {
         Button addButton = AllTasks.this.findViewById(R.id.newTaskButton);
 
 
-//        2. Add event listener
+
         homeButton.setOnClickListener(view -> {
-//        3. CallBack Fn()
-//        4. do stuff in the callback
             Intent goToMainActivity = new Intent(AllTasks.this, MainActivity.class);
             startActivity(goToMainActivity);
         });
 
         addButton.setOnClickListener(view -> {
-//        3. CallBack Fn()
-//        4. do stuff in the callback
             Intent goToAddTaskActivity = new Intent(AllTasks.this, AddTask.class);
             startActivity(goToAddTaskActivity);
         });
