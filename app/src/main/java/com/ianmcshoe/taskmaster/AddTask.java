@@ -15,7 +15,7 @@ public class AddTask extends AppCompatActivity {
 
         Button homeButton = AddTask.this.findViewById(R.id.AddTaskActivityHome);
         Button addButton = AddTask.this.findViewById(R.id.newTaskButton);
-        Button allButton = AddTask.this.findViewById(R.id.MainActivityAllButton);
+        Button allButton = AddTask.this.findViewById(R.id.AddActivityAllButton);
 
 
         homeButton.setOnClickListener(view -> {
