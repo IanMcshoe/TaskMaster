@@ -11,7 +11,6 @@
         android:layout_width="174dp"
         android:layout_height="42dp"
         android:layout_marginTop="156dp"
-        android:text="@string/HeroTitle"
         android:textSize="34sp"
         android:typeface="sans"
         app:layout_constraintEnd_toEndOf="parent"
