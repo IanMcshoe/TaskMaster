@@ -1,10 +1,12 @@
-package com.ianmcshoe.taskmaster;
+package com.ianmcshoe.taskmaster.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+
+import com.ianmcshoe.taskmaster.R;
 
 public class AddTask extends AppCompatActivity {
 
@@ -26,7 +28,7 @@ public class AddTask extends AppCompatActivity {
 
         allButton.setOnClickListener(view -> {
 
-            Intent goToAllTasksActivity = new Intent(AddTask.this, AllTasks.class);
+            Intent goToAllTasksActivity = new Intent(AddTask.this, ProfileActivity.AllTasks.class);
             startActivity(goToAllTasksActivity);
         });
 
