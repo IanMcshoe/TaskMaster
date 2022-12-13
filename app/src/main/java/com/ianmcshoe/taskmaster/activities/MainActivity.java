@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-public static final String taskTag = "myTask";
+public static final String TASK_TAG = "myTask";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

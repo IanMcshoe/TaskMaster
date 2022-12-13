@@ -23,7 +23,11 @@ public class TaskList {
         this.difficulty = difficulty;
     }
 
-    public TaskList(String name, String description) {
+
+
+    public TaskList(String name, String body) {
+        this.name = name;
+        this.body = body;
     }
 
     public Long getId() {
