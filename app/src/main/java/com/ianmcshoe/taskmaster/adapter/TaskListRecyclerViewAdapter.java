@@ -1,6 +1,7 @@
 package com.ianmcshoe.taskmaster.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.ianmcshoe.taskmaster.R;
 import com.ianmcshoe.taskmaster.activities.MainActivity;
+import com.ianmcshoe.taskmaster.activities.TaskDetails;
 import com.ianmcshoe.taskmaster.models.TaskList;
 
 import java.util.List;
@@ -33,9 +35,17 @@ public class TaskListRecyclerViewAdapter extends RecyclerView.Adapter<TaskListRe
 
     @Override
     public void onBindViewHolder(@NonNull TaskListViewHolder holder, int position) {
+
         TextView taskListFragTextViewName = holder.itemView.findViewById(R.id.TaskListName);
         String taskListName = taskList.get(position).getName();
         taskListFragTextViewName.setText(position + ". " + taskListName);
+
+        View taskListView = holder.itemView;
+        taskListView.setOnClickListener(view -> {
+            Intent goToTaskDetailsIntent = new Intent(callingActivity, TaskDetails.class);
+            goToTaskDetailsIntent.putExtra(MainActivity.TASK_TAG, taskListName);
+            callingActivity.startActivity(goToTaskDetailsIntent);
+        });
     }
 
     @Override
